@@ -2,6 +2,7 @@
  * <div id="parent">
  *       <div id="child">
  *          <h1> I am Shashank </h1>
+ *          <h2> I am Shanu </h2>
  *       </div>
  * </div>
  */
@@ -11,9 +12,10 @@ const parent = React.createElement(
     { id:"parent"},
 React.createElement(
     "div",
-    { id:"child"},
-    React.createElement("h1", {},"I am Shashank Raj")
-)
+    { id:"child"},[
+    React.createElement("h1", {},"I am Shashank Raj"),
+    React.createElement("h2", {},"I am Shanu"),
+])
 );
 
 //const heading = React.createElement("h1",{id: "heading"},"Hello World From React");
